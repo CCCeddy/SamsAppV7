@@ -124,6 +124,7 @@ a, .btn-link {
         }
 .main-heading-wrapper p {
     font-family: Eurostile;
+    font-size: 2rem;
 }
 p { 
     font-size: 1.5rem;
@@ -212,7 +213,31 @@ p {
     z-index: 0;
 }
 
+@media only screen and (max-width: 1200px) {
+    .main-heading-wrapper p {
+        font-size: 1.5rem;
+    }
+}
 @media only screen and (max-width: 1010px) {
+    .main-heading-wrapper p {
+        text-align: center;
+    }
+    #main-heading-quotes {
+        grid-area: qu / qu;
+        justify-content: center;
+    }
+    .main-heading-wrapper h1 {
+        grid-area: he / he;
+        text-align: center;
+    }
+
+    .main-heading-wrapper {
+        grid-template-columns: 2fr 3fr 3fr 2fr;
+        grid-template-areas: 
+            "bu1 he he bu2"
+            "bu1 qu qu bu2"
+            ;
+    }
     .content-wrapper {
         grid-template-areas:
             "z z z"
