@@ -2,14 +2,13 @@
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-image: url("/images/Sky.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(#0E0D26, #A7C6E2 );
 }
 
 h1:focus {
     outline: none;
 }
+
 
 a, .btn-link {
     color: #0071c1;
@@ -65,3 +64,54 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+
+#myCarousel {
+    box-shadow: 5px 10px 10px grey;
+    /*width: 300px;
+    height: 350px;*/
+}
+
+.carousel {
+    /* any dimensions are fine, it can be responsive with max-width */
+    width: 100%;
+    height: 350px;
+}
+
+.carousel-inner {
+    /* make sure your .items will get correct height */
+    height: 100%;
+}
+
+.item {
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+    .item img {
+        visibility: hidden;
+    }
+
+    .main-heading-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+            color: #A7C6E2;
+    }
+        .main-heading-wrapper h1 {
+            font-size: 10rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #main-heading-quotes {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin-left: 5px;
+
+        }
+.main-heading-wrapper p {
+    /*width: 0%;*/
+    text-align: center;
+}

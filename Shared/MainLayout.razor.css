@@ -19,16 +19,21 @@ main {
     height: 3.5rem;
     display: flex;
     align-items: center;
+    background-color: #333333;
+    
 }
+
 
     .top-row ::deep a, .top-row .btn-link {
         white-space: nowrap;
         margin-left: 1.5rem;
+        color: aliceblue;
     }
 
     .top-row a:first-child {
         overflow: hidden;
         text-overflow: ellipsis;
+        
     }
 
 @media (max-width: 640.98px) {
